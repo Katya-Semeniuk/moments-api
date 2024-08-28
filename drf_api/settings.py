@@ -15,7 +15,7 @@ import os
 if os.path.exists('env.py'):
     import env
 
-CLOUDINARY_STORAGE ={
+CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
 }
 MEDIA_URL = '/media/'
@@ -36,6 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-katyasemeniu-momentsapi-m7ud98prdl6.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-katyasemeniu-momentsapi-m7ud98prdl6.ws.codeinstitute-ide.net']
 
 # Application definition
 
