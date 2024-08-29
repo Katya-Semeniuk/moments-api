@@ -7,6 +7,9 @@ from .serializers import PostSerializer
 from drf_api.permissions import IsOwnerOrReadOnly
 
 
+
+
+
 class PostList(APIView):
     """
     List all posta
