@@ -67,6 +67,7 @@ DEBUG = 'DEV' in os.environ
 ALLOWED_HOSTS = [
    os.environ.get('ALLOWED_HOST'),
    'localhost',
+   '8000-katyasemeniu-momentsapi-m7ud98prdl6.ws.codeinstitute-ide.net'
 ]
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-katyasemeniu-momentsapi-m7ud98prdl6.ws.codeinstitute-ide.net']
@@ -86,6 +87,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'dj_rest_auth',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
     'profiles',
@@ -94,6 +99,8 @@ INSTALLED_APPS = [
     'likes',
     'followers',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
